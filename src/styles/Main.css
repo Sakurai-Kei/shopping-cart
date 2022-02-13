@@ -1,0 +1,30 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.Hero {
+  margin-top: 0;
+  height: 33%;
+}
+
+.ProductInfo {
+  margin-top: auto;
+  height: 33%;
+}
+
+.Contact {
+  margin-top: auto;
+  height: 33%;
+}
+
+.row {
+}
+
+.col-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
