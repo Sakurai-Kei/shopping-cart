@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-bootstrap": "^0.24.5",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",

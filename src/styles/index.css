@@ -1,3 +1,27 @@
+@import "./Header.css";
+@import "./Footer.css";
+@import "./App.css";
+
+/* 
+ Coolors.co for color generator
+ Header Footer 232324
+ General 30303B
+ Text E8E8AC
+ 2 more colors - Blue 2D2DCF and Grey? 4C4C6B
+  */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #e8e8ac;
+  background-color: #30303b;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
