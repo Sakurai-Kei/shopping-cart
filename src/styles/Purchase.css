@@ -1,0 +1,13 @@
+.Purchase {
+  display: flex;
+  border: 2px solid red;
+  flex-grow: 1;
+}
+
+.ProcessItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+}

@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import getProductList from "./ProductList";
 
 interface Product {
+  id: number;
   src: string;
   name: string;
   description: string;
