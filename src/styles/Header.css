@@ -3,3 +3,11 @@
   background-color: #232324;
   color: #e8e8ac;
 }
+
+.navbar-toggler-icon {
+  background-image: url("../assets/icons/dropDownIcon.png");
+}
+
+.nav-link {
+  color: #e8e8ac;
+}

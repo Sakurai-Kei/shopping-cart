@@ -1,17 +1,11 @@
-import { useState } from "react";
+let itemList: any[] = [];
 
-const ItemsCart = () => {
-  const [itemList, setItemList] = useState([]);
+function addToCart(item: any) {
+  return (itemList = itemList.concat(item));
+}
 
-  function addToCart(item: any) {
-    setItemList(itemList.concat(item));
-  }
+function getItemList() {
+  return itemList;
+}
 
-  function getItemList() {
-    return itemList;
-  }
-
-  return { addToCart, getItemList };
-};
-
-export default ItemsCart;
+export { addToCart, getItemList };
