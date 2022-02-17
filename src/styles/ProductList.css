@@ -1,6 +1,7 @@
 .ProductList {
   display: flex;
   gap: 5%;
+  padding: 2%;
 }
 
 .ProductModal {

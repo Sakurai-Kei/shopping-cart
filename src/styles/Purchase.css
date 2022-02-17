@@ -3,6 +3,12 @@
   flex-grow: 1;
 }
 
+.ItemList {
+  display: flex;
+  gap: 1%;
+  justify-content: space-evenly;
+}
+
 .ProcessItem {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import getProductList from "./ProductList";
-import { addToCart, getItemList } from "./ItemsCart";
+import { addToCart } from "./ItemsCart";
 
 interface Product {
   id: number;
