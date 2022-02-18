@@ -16,3 +16,9 @@
   justify-content: center;
   gap: 25%;
 }
+
+.TotalPrice,
+.PaymentNotification {
+  display: flex;
+  justify-content: center;
+}

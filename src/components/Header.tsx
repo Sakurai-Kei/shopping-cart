@@ -14,7 +14,7 @@ function Header() {
 
   return (
     // @ts-ignore: variant propTypes is too restrictive
-    <Navbar expand="lg" className="Header" variant="custom">
+    <Navbar expand="md" className="Header" variant="custom">
       <Navbar.Brand>Shopping Cart Project</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

@@ -12,7 +12,7 @@ function ShowProgressBar({ show, value }: any) {
       <ProgressBar animated now={value} style={{ margin: "0", padding: "0" }} />
     );
   } else if (value === 100) {
-    return <Col>Payment Done!</Col>;
+    return <Col className="PaymentNotification">Payment Done!</Col>;
   }
   return null;
 }
@@ -21,6 +21,14 @@ function PurchasePage() {
   const [show, setShow] = useState(false);
   const [value, setValue] = useState(50);
   const itemInCart = getItemList();
+  let totalPrice: number = calculatePrice();
+
+  function calculatePrice(): number {
+    if (itemInCart.length !== 0) {
+      return itemInCart.reduce((a, b) => parseInt(a.price) + parseInt(b.price));
+    }
+    return 0;
+  }
 
   function simulatePaySys() {
     setShow(true);
@@ -52,6 +60,7 @@ function PurchasePage() {
           })}
         </Row>
         <Row className="PayOption">
+          <Col className="TotalPrice">Total Price: RM{totalPrice}</Col>
           <Button variant="primary" onClick={simulatePaySys}>
             Pay with Visa
           </Button>
