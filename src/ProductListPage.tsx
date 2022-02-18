@@ -23,13 +23,17 @@ function ProductListPage() {
     <Container fluid className="ProductList">
       {products.map((product: Product) => {
         const { id, src, name, description, price, quantity } = product;
-        inCart.forEach((item) => {
-          if (item.id === id) {
-            status = true;
-          } else {
-            status = false;
-          }
-        });
+
+        if (
+          inCart.some((item) => {
+            return item.id === id;
+          })
+        ) {
+          status = true;
+        } else {
+          status = false;
+        }
+
         return (
           <Card key={id} style={{ width: "18rem" }} className="ProductModal">
             <Card.Img src={src} />
