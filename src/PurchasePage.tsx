@@ -39,8 +39,8 @@ function PurchasePage() {
 
   return (
     <Container className="Purchase" fluid>
-      <Col className="ProcessItem">
-        <Row className="ItemList">
+      <Col sm className="ProcessItem">
+        <Col sm className="ItemList">
           {itemInCart.map((item) => {
             const { id, src, name, description, price } = item;
             return (
@@ -58,7 +58,7 @@ function PurchasePage() {
               </Card>
             );
           })}
-        </Row>
+        </Col>
         <Row className="PayOption">
           <Col className="TotalPrice">Total Price: RM{totalPrice}</Col>
           <Button variant="primary" onClick={simulatePaySys}>
