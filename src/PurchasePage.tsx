@@ -25,7 +25,6 @@ function PurchasePage() {
   function simulatePaySys() {
     setShow(true);
     setTimeout(() => {
-      console.log("once");
       setValue(100);
     }, 3000);
   }
